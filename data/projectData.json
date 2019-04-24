@@ -1,0 +1,52 @@
+{
+    "data": {
+        "project_name": "Kevin's Portfolio",
+        "projects": [
+            {
+                "id": "0",
+                "project_name": "Random Quote Generator",
+                "description" : "A random quote generator, pulling from an array of objects. Background color randomly changes for every quote, and quote automatically changes every 20 seconds unless it's manually changed by the user.",
+                "image_urls" : ["/static/img/project-1-large-1.jpg", "/static/img/project-1-large-2.jpg", "/static/img/project-1-large-3.jpg"],
+                "tech": ["JavaScript", "HTML", "CSS"],
+                "github_link" : "https://github.com/kmadden84/Techdegree-Project-1",
+                "live_link" : "http://www.kevinmadden.info/projects/random_quote/index.html"
+            },
+            {
+                "id": "1",
+                "project_name": "Pagination with Search",
+                "description": "A list of students is automatically paginated to show 10 per page. Page buttons are automatically appended based on the number of pages, and a search filter allows users to search for students.",              
+                "image_urls" : ["/static/img/project-2-large-1.jpg", "/static/img/project-2-large-2.jpg", "/static/img/project-2-large-3.jpg"],
+                "tech": ["JavaScript", "HTML", "CSS"],
+                "github_link" : "https://github.com/kmadden84/Techdegree-Project-2",
+                "live_link" : "http://www.kevinmadden.info/projects/pagination/index.html"
+            },
+            {
+                "id": "2",
+                "project_name": "Form Validation",
+                "description": "A form with validation and various conditions for multiple fields. Includes regexp validation and other methods. Certain options are toggled on or off, depending on what other options are selected. Price is automatically calculated based on selected preferences.",
+                "image_urls" : ["/static/img/project-3-large-1.jpg", "/static/img/project-3-large-2.jpg", "/static/img/project-3-large-3.jpg"],
+                "tech": ["JavaScript", "Regex", "HTML", "CSS"],
+                "github_link" : "https://github.com/kmadden84/Techdegree-Project-3",
+                "live_link" : "http://www.kevinmadden.info/projects/form_validation/index.html"
+            },
+            {
+                "id": "3",
+                "project_name": "Game Show App",
+                "description": "A word guessing game, similar to Wheel of Fortune. Every letter correctly guessed is displayed on the screen, and the selected key is disabled. Selecting a letter not in the word removes 1 of your 5 lives. Incorrectly selected letters are colored uniquely.",
+                "image_urls" : ["/static/img/project-4-large-1.jpg", "/static/img/project-4-large-2.jpg", "/static/img/project-4-large-3.jpg"],
+                "tech": ["JavaScript", "Classes, Methods, and Constructors", "Arrays", "HTML", "CSS"],
+                "github_link" : "https://github.com/kmadden84/Techdegree-Project-4",
+                "live_link" : "http://www.kevinmadden.info/projects/game_show/index.html"
+            },
+            {
+                "id": "4",
+                "project_name": "Fetching/Parsing/Styling/Rendering JSON Data",
+                "description": "A JSON feed containing data on random students is fetched, parsed, and styled onto the page.  Clicking each students fetches more information on that student, and \"Previous/Next\" buttons allow you to cycle through other student modals.",
+                "image_urls" : ["/static/img/project-5-large-1.jpg", "/static/img/project-5-large-2.jpg", "/static/img/project-5-large-3.jpg"],
+                "tech": ["JavaScript", "JSON feeds", "Arrays", "Promise Functions", "CSS"],
+                "github_link" : "https://github.com/kmadden84/Techdegree-Project-5",
+                "live_link" : "http://www.kevinmadden.info/projects/json_data/index.html"
+            }
+        ]
+    }
+}
