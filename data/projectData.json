@@ -40,8 +40,8 @@
             },
             {
                 "id": "4",
-                "project_name": "Fetching, parsing, styling, and rendering JSON data.  Clicking students bring up more info from that student (querying the JSON feed for more info), and clicing the \"Next/Previous\" buttons shows other student modals in the correct order.  A search filter allows you to narrow down the student list",
-                "description": "A JSON feed containing data on random students is fetched, parsed, and styled onto the page.  Clicking each students fetches more information on that student, and \"Previous/Next\" buttons allow you to cycle through other student modals.",
+                "project_name": "Fetching, parsing, styling, and rendering JSON data.",
+                "description": "A JSON feed containing data on random students is fetched, parsed, and styled onto the page.  Clicking each students fetches more information on that student (querying the JSON feed for the additional information), and \"Previous/Next\" buttons allow you to cycle through other student modals in order.  There's a search bar to narrow down the list of students.",
                 "image_urls" : ["/static/img/project-5-large-1.jpg", "/static/img/project-5-large-2.jpg", "/static/img/project-5-large-3.jpg"],
                 "tech": ["JavaScript", "JSON feeds", "Arrays", "Promise Functions", "CSS"],
                 "github_link" : "https://github.com/kmadden84/Techdegree-Project-5",
