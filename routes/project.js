@@ -3,13 +3,13 @@ const router = express.Router();
 const { data } = require('../data/projectData.json');
 const { projects } = data;
 
-router.get('/project', (req, res) => {
+router.get('/', (req, res) => {
     const numberOfProjects = projects.length;
     const projectId = Math.floor(Math.random() * numberOfProjects);
     res.redirect(`/project/${projectId}`)
 });
 
-router.get('/project/:id', (req, res) => {
+router.get('/:id', (req, res) => {
     const { id } = req.params;
     const thisproject = projects[id];
     const description = thisproject.description;
