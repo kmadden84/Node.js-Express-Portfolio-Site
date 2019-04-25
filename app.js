@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const port = process.env.PORT || 8000;
 const app = express();
-
+const server = app.listen();
 app.use('/static', express.static('public'));
 
 app.set('view engine', 'pug');
