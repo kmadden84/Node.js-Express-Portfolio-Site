@@ -1,6 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-
+const port = process.env.PORT || 8000;
 const app = express();
 
 app.use('/static', express.static('public'));
@@ -38,7 +38,6 @@ app.get('/project/:id', (req, res) => {
     res.render('project', templateData);
 
 });
-
-app.listen(process.env.PORT || 3000, function(){
-  console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+server.listen(port, () => {
+    console.log("App is running on port " + port);
 });
