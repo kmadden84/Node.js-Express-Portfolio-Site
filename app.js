@@ -1,42 +1,22 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const port = process.env.PORT || 8000;
+
 const app = express();
+
+app.use(bodyParser.urlencoded({ extended: false }));
 app.use('/static', express.static('public'));
 
 app.set('view engine', 'pug');
 
-app.use(bodyParser.urlencoded({ extended: false }));
+const mainRoutes = require('./routes');
+const projRoutes = require('./routes/project');
+const aboutRoutes = require('./routes/about');
 
-const { data } = require('./data/projectData.json');
-const { projects } = data;
+app.use(mainRoutes);
+app.use('/project', projRoutes);
+app.use('/about', aboutRoutes);
 
-
-app.get('/', (req, res) => {
-    res.render('index', { projects });
-
-});
-app.get('/about', (req, res) => {
-    res.render('about');
-
-});
-
-app.get('/project', (req, res) => {
-    const numberOfProjects = projects.length;
-    const projectId = Math.floor(Math.random() * numberOfProjects);
-    res.redirect(`/project/${projectId}`)
-});
-
-app.get('/project/:id', (req, res) => {
-    const { id } = req.params;
-    const thisproject = projects[id];
-    const description = thisproject.description;
-    const tech = thisproject.tech;
-    const imgs = thisproject.image_urls;
-    const templateData = { id, thisproject, description, tech, imgs };
-    res.render('project', templateData);
-
-});
 
 app.use((req, res, next) => {
   const err = new Error('Not Found');
@@ -49,7 +29,6 @@ app.use((err, req, res, next) => {
   res.status(err.status);
   res.render('error');
 });
-
 
 app.listen(port, () => {
     console.log("App is running on port " + port);
