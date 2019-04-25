@@ -2,7 +2,6 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const port = process.env.PORT || 8000;
 const app = express();
-const server = app.listen();
 app.use('/static', express.static('public'));
 
 app.set('view engine', 'pug');
@@ -38,6 +37,6 @@ app.get('/project/:id', (req, res) => {
     res.render('project', templateData);
 
 });
-server.listen(port, () => {
+app.listen(port, () => {
     console.log("App is running on port " + port);
 });
