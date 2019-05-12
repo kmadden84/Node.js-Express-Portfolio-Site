@@ -54,7 +54,7 @@
                 "image_urls" : ["/static/img/project-6-large-1.jpg", "/static/img/project-6-large-2.jpg", "/static/img/project-6-large-3.jpg"],
                 "tech": ["JavaScript", "JSON feeds", "Arrays", "Promise Functions", "CSS"],
                 "github_link" : "https://github.com/kmadden84/Techdegree-Project-7",
-                "live_link" : "http://www.kevinmadden.info/projects/json_data/index.html"
+                "live_link" : "https://km-flickr-react-app.herokuapp.com/"
             }
         ]
     }
