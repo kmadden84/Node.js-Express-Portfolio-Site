@@ -52,7 +52,7 @@
                 "project_name": "React-based app for searching through Flickr image tags",
                 "description": "A React-based app that allows you to search Flickr's public api for tags, or allows you to filter through 3 presets. The image URLs is dynamically constructed based on either the search query, or the URL parameters.",
                 "image_urls" : ["/static/img/project-6-large-1.jpg", "/static/img/project-6-large-2.jpg", "/static/img/project-6-large-3.jpg"],
-                "tech": ["JavaScript", "JSON feeds", "Arrays", "Promise Functions", "CSS"],
+                "tech": ["React", "JavaScript", "JSON feeds", "Axios API Calls", "Routing", "Promise Functions"],
                 "github_link" : "https://github.com/kmadden84/Techdegree-Project-7",
                 "live_link" : "https://km-flickr-react-app.herokuapp.com/"
             }
