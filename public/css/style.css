@@ -55,7 +55,11 @@ a:hover{
   box-shadow: 0 0 0 1px rgba(10, 10, 10, 0.2);
   line-height: 0;
 }
-
+.shrink > .thumbnail {
+  border-radius: 66%;
+  width: 254px;
+  height: 217px;
+}
 .portfolio-me{
   padding: 20px;
   background: #121213;
