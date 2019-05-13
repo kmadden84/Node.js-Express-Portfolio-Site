@@ -21,7 +21,7 @@ router.get('/:id', (req, res, next) => {
     var arrayId = projects[i].id;
     ids.push(arrayId);
   }
-  if (ids.indexOf(id) !== -1) {
+  if (ids.indexOf(id) !== -1 && !isNaN(id)) {
   const projName = projects[id].project_name;
   const description = projects[id].description;
   const tech = projects[id].tech;
