@@ -55,7 +55,16 @@
                 "tech": ["React", "JavaScript", "JSON feeds", "Axios API Calls", "Routing", "Promise Functions"],
                 "github_link" : "https://github.com/kmadden84/Techdegree-Project-7",
                 "live_link" : "https://km-flickr-react-app.herokuapp.com/"
-            }
+            },
+            {
+              "id": "6",
+              "project_name": "Nodejs, Express, and Sequelize for book database",
+              "description": "An app using Nodejs, Express, and Sequelize to create a book database.  Database allows users to modify and enter their own books, and well as search current books.  The user also has the option to enable pagination, or view the entire list.",
+              "image_urls" : ["/static/img/project-7-large-1.jpg", "/static/img/project-7-large-2.jpg", "/static/img/project-7-large-3.jpg"],
+              "tech": ["JavaScript", "Nodejs", "Sequelize", "Express", "SQL"],
+              "github_link" : "https://github.com/kmadden84/Techdegree-Project-8",
+              "live_link" : "https://km-book-repository.herokuapp.com"
+          }
         ]
     }
 }
