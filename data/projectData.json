@@ -72,7 +72,7 @@
             "image_urls" : ["/static/img/project-8-large-1.jpg", "/static/img/project-8-large-2.jpg", "/static/img/project-8-large-3.jpg"],
             "tech": ["React","JavaScript", "Nodejs", "Sequelize", "Express", "SQL"],
             "github_link" : "https://github.com/kmadden84/Techdegree-Project-10",
-            "live_link" : "https://course-depot.herokuapp.com/signup"
+            "live_link" : "https://course-depot.herokuapp.com/"
         }
         ]
     }
