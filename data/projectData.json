@@ -71,7 +71,7 @@
             "description": "A React App allowing users to view course materials. Users can sign up and login to create their own courses, or edit and delete their existing courses.  The information is returned from a REST API which returns information in a Sequelize managed database.",
             "image_urls" : ["/static/img/project-8-large-1.jpg", "/static/img/project-8-large-2.jpg", "/static/img/project-8-large-3.jpg"],
             "tech": ["React","JavaScript", "Nodejs", "Sequelize", "Express", "SQL"],
-            "github_link" : "https://github.com/kmadden84/Techdegree-Project-10",
+            "github_link" : "https://github.com/kmadden84/techdegree-final-project",
             "live_link" : "https://course-depot.herokuapp.com/"
         }
         ]
