@@ -68,7 +68,7 @@
           {
             "id": "7",
             "project_name": "Full Stack App with React and a REST API",
-            "description": "A React App allowing users to view course materials. Users can sign up and login to create their own courses, or edit and delete their existing courses.  The information is returned from a REST API which returns information in a Sequelize managed database.",
+            "description": "A React App allowing users to view, edit, and publish course materials. Users can sign up and login to create their own courses, or edit and delete their existing courses. Only the course creator may edit or delete their own course. User and course info is returned from REST API which I created (<a href='https://km-rest-api.herokuapp.com' target='_blank'>API</a>, <a href='https://github.com/kmadden84/techdegree-project-9'>GitHub</a>).  The API uses basic-auth for authentication, and stores/returns information in a Sequelize managed database.",
             "image_urls" : ["/static/img/project-8-large-1.jpg", "/static/img/project-8-large-2.jpg", "/static/img/project-8-large-3.jpg"],
             "tech": ["React","JavaScript", "Nodejs", "Sequelize", "Express", "SQL"],
             "github_link" : "https://github.com/kmadden84/techdegree-final-project",
