@@ -73,7 +73,7 @@
             "tech": ["React","JavaScript", "Nodejs", "Sequelize", "Express", "SQL"],
             "github_link" : "https://github.com/kmadden84/techdegree-final-project",
             "live_link" : "https://course-depot.herokuapp.com/"
-        }
+        },
         {
           "id": "8",
           "project_name": "React App - OpenTable Restaurant Search",
