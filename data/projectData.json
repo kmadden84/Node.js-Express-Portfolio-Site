@@ -74,6 +74,15 @@
             "github_link" : "https://github.com/kmadden84/techdegree-final-project",
             "live_link" : "https://course-depot.herokuapp.com/"
         }
+        {
+          "id": "8",
+          "project_name": "React App - OpenTable Restaurant Search",
+          "description": "A React App allowing users to search the OpenTable API for restaurants by City.  Results are paginated, with next/prev buttons allowing users to cycle through the pages.",
+          "image_urls" : ["/static/img/project-9-large-1.jpg", "/static/img/project-9-large-2.jpg", "/static/img/project-9-large-3.jpg"],
+          "tech": ["React","JavaScript", "CSS", "Fetch", "JSON feeds"],
+          "github_link" : "https://github.com/kmadden84/bmoapptest",
+          "live_link" : "https://bmoapptest.herokuapp.com/"
+      }
         ]
     }
 }
