@@ -85,7 +85,7 @@
       },
       {
         "id": "9",
-        "project_name": "React App - Dating Site",
+        "project_name": "Full Stack React App - Dating Site",
         "description": "A React App allowing users to sign up for a dating site, then matches are pulled based on their profile information.  Users create an account, then create a profile. When logged in, they are able to view and update their profile, and view their matches.  Information is returned from a REST API created with Node.js, Express, SQLite and Sequelize.",
         "image_urls" : ["/static/img/project-10-large-1.jpg", "/static/img/project-10-large-2.jpg", "/static/img/project-10-large-3.jpg"],
         "tech": ["React","JavaScript", "CSS", "Fetch", "JSON feeds"],
