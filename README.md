@@ -1,2 +1,2 @@
-# Techdegree-project-6
-Updated my profile image with border radius so it's circular, instead of square!
+# Node.js + Express based portfolio site
+A dynamic page built in Node, Express, and Pug to show off some of my projects
