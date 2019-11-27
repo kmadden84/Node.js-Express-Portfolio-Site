@@ -17,6 +17,32 @@ app.use(mainRoutes);
 app.use('/project', projRoutes);
 app.use('/about', aboutRoutes);
 
+
+function startKeepAlive() {
+    setInterval(function() {
+        var options = {
+            host: 'kevin-madden-portfolio.herokuapp.com',
+            port: port,
+            path: '/'
+        };
+        http.get(options, function(res) {
+            res.on('data', function(chunk) {
+                try {
+                    // optional logging... disable after it's working
+                    console.log("HEROKU RESPONSE: " + chunk);
+                } catch (err) {
+                    console.log(err.message);
+                }
+            });
+        }).on('error', function(err) {
+            console.log("Error: " + err.message);
+        });
+    }, 20 * 60 * 1000); // load every 20 minutes
+}
+
+startKeepAlive();
+
+
 app.use((req, res, next) => {
   const err = new Error('Not Found');
   err.status = 404;
