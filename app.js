@@ -17,10 +17,6 @@ app.use(mainRoutes);
 app.use('/project', projRoutes);
 app.use('/about', aboutRoutes);
 
-setInterval(function() {
-    http.get("https://kevin-madden-portfolio.herokuapp.com");
-}, 300000); // every 5 minutes (300000)
-
 app.use((req, res, next) => {
   const err = new Error('Not Found');
   err.status = 404;
