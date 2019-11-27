@@ -1,7 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const port = process.env.PORT || 8000;
-
+const http = require("http");
 const app = express();
 
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -17,6 +17,9 @@ app.use(mainRoutes);
 app.use('/project', projRoutes);
 app.use('/about', aboutRoutes);
 
+setInterval(function() {
+    http.get("https://kevin-madden-portfolio.herokuapp.com");
+}, 300000); // every 5 minutes (300000)
 
 app.use((req, res, next) => {
   const err = new Error('Not Found');
@@ -32,13 +35,6 @@ app.use(( err, req, res, next ) => {
     res.status(500);
   res.render('error');
 });
-
-var http = require("http");
-setInterval(function() {
-    http.get("https://kevin-madden-portfolio.herokuapp.com");
-}, 300000); // every 5 minutes (300000)
-
-
 app.listen(port, () => {
     console.log("App is running on port " + port);
 });
