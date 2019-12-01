@@ -1,7 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const port = process.env.PORT || 8000;
-
+const http = require("http");
 const app = express();
 
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -18,6 +18,31 @@ app.use('/project', projRoutes);
 app.use('/about', aboutRoutes);
 
 
+function startKeepAlive() {
+    setInterval(function() {
+        var options = {
+            host: 'kevin-madden-portfolio.herokuapp.com',
+            port: port,
+            path: '/'
+        };
+        http.get(options, function(res) {
+            res.on('data', function(chunk) {
+                try {
+                    // optional logging... disable after it's working
+                    console.log("HEROKU RESPONSE: " + chunk);
+                } catch (err) {
+                    console.log(err.message);
+                }
+            });
+        }).on('error', function(err) {
+            console.log("Error: " + err.message);
+        });
+    }, 20 * 60 * 1000); // load every 20 minutes
+}
+
+startKeepAlive();
+
+
 app.use((req, res, next) => {
   const err = new Error('Not Found');
   err.status = 404;
@@ -32,13 +57,6 @@ app.use(( err, req, res, next ) => {
     res.status(500);
   res.render('error');
 });
-
-var http = require("http");
-setInterval(function() {
-    http.get("https://kevin-madden-portfolio.herokuapp.com");
-}, 300000); // every 5 minutes (300000)
-
-
 app.listen(port, () => {
     console.log("App is running on port " + port);
 });
