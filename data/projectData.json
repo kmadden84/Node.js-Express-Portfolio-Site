@@ -91,7 +91,23 @@
         "tech": ["React","JavaScript", "Node.js", "Express", "Sequelize", "Fetch", "JSON feeds", "REST API"],
         "github_link" : "https://github.com/kmadden84/datingapp",
         "live_link" : "https://km-dating-app.herokuapp.com"
-    }
+    },{
+      "id": "10",
+      "project_name": "MERN stack app - Book Depot",
+      "description": "Server side login and database handled by MongoDB, Passport and Node.  Front-end client built with React.  A simple app allowing users to list books with details and any relevant notes.",
+      "image_urls" : ["/static/img/project-10-large-1.jpg", "/static/img/project-10-large-2.jpg", "/static/img/project-10-large-3.jpg"],
+      "tech": ["React","JavaScript", "Node.js", "Express", "Fetch", "REST API", "MongoDB", "Passport","React-Bootstrap"],
+      "github_link" : "https://github.com/kmadden84/mern-book-depot",
+      "live_link" : "https://mern-book-depot.herokuapp.com/"
+  },{
+    "id": "11",
+    "project_name": "News Aggregator",
+    "description": "A news aggregation app, allowing users to view News from pre-selected categories, or search the news for whatever they're interested in. Data is pulled from https://newsapi.org/",
+    "image_urls" : ["/static/img/project-10-large-1.jpg", "/static/img/project-10-large-2.jpg", "/static/img/project-10-large-3.jpg"],
+    "tech": ["React","JavaScript","Fetch","React-Bootstrap"],
+    "github_link" : "https://github.com/kmadden84/news-aggregator",
+    "live_link" : "https://adoring-mccarthy-e153bb.netlify.app/"
+}
         ]
     }
 }
