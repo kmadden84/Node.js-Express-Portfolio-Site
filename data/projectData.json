@@ -106,7 +106,7 @@
     "image_urls" : ["/static/img/project-12-large-1.jpg", "/static/img/project-12-large-2.jpg", "/static/img/project-12-large-3.jpg"],
     "tech": ["React","JavaScript","Fetch","React-Bootstrap"],
     "github_link" : "https://github.com/kmadden84/news-aggregator",
-    "live_link" : "https://adoring-mccarthy-e153bb.netlify.app/"
+    "live_link" : "http://news-aggregator-km.herokuapp.com/"
 }
         ]
     }
